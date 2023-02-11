@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    height: 10vh;
+    padding: 20px 80px;
+    background-color: aliceblue;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    padding: 16px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+header ul li:hover {
+    background-color: #e0218a;
+    color: white;
+}
+
+.movies {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 80px 0px;
+    gap: 32px;
+}
+
+.movie {
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    height: 400px;
+    gap: 16px;
+    box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.1);
+}
+
+.cover {
+    display: flex;
+    height: 100%;
+}
+
+button {
+    margin: 24px 0px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    color: white;
+    background-color: #e0218a;
+    cursor: pointer;
+    transition: 300ms;
+}
+button:hover {
+    background-color: #bc1d74;
+}
+
+@media (max-width: 900px) {
+    header {
+        justify-content: center;
+    }
+    header ul {
+        display: none;
+    }
+    .movie {
+        flex-direction: column;
+        height: auto;
+        width: 90vw;
+    }
+    .content {
+        padding: 40px;
+    }
+    .content div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
